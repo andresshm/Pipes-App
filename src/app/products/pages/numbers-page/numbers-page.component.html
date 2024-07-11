@@ -20,9 +20,13 @@
 
       <div class="col-12 md:col-4">
         <p-card header="Ventas brutas" subheader="de este año">
-          {{totalSells | number:'1.2-2'}}
+          {{totalSells | currency:'EUR':'symbol-narrow':'1.2-2'}}
         </p-card>
       </div>
 
-
+      <div class="col-12 md:col-4">
+        <p-card header="Ganancias porcenales" >
+          {{percent | percent:'1.2-2'}}
+        </p-card>
+      </div>
       </div>

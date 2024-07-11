@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { ProductsRoutingModule } from './products-routing.module';
 import { PrimeNgModule } from '../prime-ng/prime-ng.module';
+import { OrderComponent } from './pages/order/order.component';
 
 
 @NgModule({
@@ -11,6 +12,8 @@ import { PrimeNgModule } from '../prime-ng/prime-ng.module';
     CommonModule,
     ProductsRoutingModule,
     PrimeNgModule,
+    OrderComponent,
+
   ]
 })
 export class ProductsModule { }
